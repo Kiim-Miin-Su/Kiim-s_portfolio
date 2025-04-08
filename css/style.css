@@ -307,3 +307,27 @@ footer ul {
 footer a {
     color: var(--color-accent);
 }
+
+@media (max-width: 768px) {
+
+    .about_me,
+    .skills {
+        width: 100%;
+    }
+
+    .works li {
+        width: 100%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+
+    .about_me,
+    .skills {
+        width: 100%;
+    }
+
+    .works li {
+        width: 100%;
+    }
+}
