@@ -4,3 +4,140 @@
     font-weight: normal;
     font-style: normal;
 }
+
+:root {
+    --color-black: #000;
+    --color-white: #fff;
+    --color-gray: #5d5d5d;
+    --color-blue: #16a7fb;
+    --color-orange: #ffa500;
+    --color-red: #ff0000;
+    --color-green: #00ff00;
+    --color-yellow: #ffff00;
+    --color-purple: #800080;
+    --color-pink: #ffc0cb;
+
+    --color-primary: var(--color-black);
+    --color-text: var(--color-white);
+    --color-primary-variant: var(--color-gray);
+    --color-accent: var(--color-blue);
+    --color-accent-variant: var(--color-orange);
+
+    --size-max-width: 1200px;
+    --header-height: 70px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Ownglyph_ParkDaHyun', sans-serif;
+    background-color: var(--color-white);
+    color: var(--color-black);
+    line-height: 1.6;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu_lists>.menu_item:hover {
+    border-bottom: 2px solid var(--color-accent);
+}
+
+.menu_lists>.menu_item:active {
+    outline: 2px solid var(--color-accent-variant);
+}
+
+.header {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+}
+
+.title a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--color-text);
+}
+
+.menus .menu_lists {
+    display: flex;
+    gap: 1rem;
+}
+
+.menu_item {
+    padding: 0.5rem;
+    color: var(--color-text);
+}
+
+main {
+    max-width: var(--size-max-width);
+    margin: 0 auto;
+    padding-top: calc(var(--header-height) + 2rem);
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 4rem;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+section p,
+section address,
+section a {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+footer {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    text-align: center;
+    padding: 1rem;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+footer a {
+    color: var(--color-accent);
+}
