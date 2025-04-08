@@ -21,10 +21,9 @@
 
 <body>
     <header class="header">
-        <div class="intro">
-            <img src="./images/favicon.ico" alt="My Profile" class="logo">
-            <h1 class="title"><a href="#home">Kiim</a></h1>
-            <h2>Web Developer</h2>
+        <div class="intro-hover-area">
+            <img src="./images/favicon.ico" alt="My Profile" class="logos">
+            <p class="logo-text">안녕하세요, Kiim입니다!</p>
         </div>
         <nav class="menus">
             <ul class="menu_lists">
@@ -46,67 +45,60 @@
             <a href="#contact">Contact Me</a>
         </section>
 
-        <section class="about" id="about">
-            <h2>About Me</h2>
-            <ul>
-                <li>
-                    <i class="fa-solid fa-mobile"></i>
-                    <p>Education</p>
-                    <p>국비지원교육: AI 활용 소프트웨어 개발 및 응용 (2025.03 ~ 2025.09)</p>
-                </li>
-                <li>
-                    <i class="fa-solid fa-mobile"></i>
-                    <p>Work</p>
-                    <p>(주)피코와이즈: SK Siltron Wafer 공장 자동화 개발</p>
-                </li>
-            </ul>
-        </section>
+        <div class="about">
+            <section class="about_me" id="about_me">
+                <h2>About Me</h2>
+                <ul>
+                    <li class="intro-hover-area">
+                        <div class="education_logo logos"></div>
+                        <p class="logo-text">국비지원교육: AI 활용 소프트웨어 개발 및 응용 (2025.03 ~ 2025.09)</p>
+                    </li>
+                    <li class="intro-hover-area">
+                        <div class="fa_logo logos"></div>
+                        <p class="logo-text">(주)피코와이즈: SK Siltron Wafer 공장 자동화 개발</p>
+                    </li>
+                </ul>
+            </section>
 
-        <section class="skills" id="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>
-                    <i class="fa-solid fa-mobile"></i>
-                    <p>Front-end</p>
-                    <p>HTML, CSS, JavaScript</p>
-                </li>
-                <li>
-                    <i class="fa-solid fa-mobile"></i>
-                    <p>Back-end</p>
-                    <p>Java, C++, Spring Boot</p>
-                </li>
-                <li>
-                    <i class="fa-solid fa-mobile"></i>
-                    <p>AI</p>
-                    <p>TensorFlow, Python, PyTorch, NumPy</p>
-                </li>
-            </ul>
-        </section>
+            <section class="skills" id="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li class="intro-hover-area">
+                        <div class="html_logo logos"></div>
+                        <p class="logo-text">HTML, CSS, JavaScript</p>
+                    </li>
+                    <li class="intro-hover-area">
+                        <div class="java_logo logos"></div>
+                        <p class="logo-text">Java, C++, Spring Boot</p>
+                    </li>
+                    <li class="intro-hover-area">
+                        <div class="python_logo logos"></div>
+                        <p class="logo-text">TensorFlow, Python, PyTorch, NumPy</p>
+                    </li>
+                </ul>
+            </section>
+        </div>
 
         <section class="works" id="works">
             <h2>Portfolio</h2>
-            <ul>
-                <li>
-                    <i class="fa-solid fa-mobile"></i>
-                    <p>AI 활용 주가 분석 및 예측</p>
+            <ul class="works_list">
+                <li id="stock_predict">
+                    <h3>AI 활용 주가 분석 및 예측</h3>
                     <p><a href="https://drive.google.com/file/d/1U0goSeiQjGJEhTro9iNVcm-1yPeHzZrU/view?usp=drive_link"
                             target="_blank">Stock Predict</a></p>
                 </li>
-                <li>
-                    <i class="fa-solid fa-mobile"></i>
-                    <p>C#, Unity 활용 Game Project</p>
+                <li id="game">
+                    <h3>C#, Unity 활용 Game Project</h3>
                     <p><a href="https://drive.google.com/file/d/142yp3TvbfP1yhL5KtyKFHc5DKIOre93x/view?usp=drive_link"
                             target="_blank">Game Project</a></p>
                 </li>
-                <li>
-                    <i class="fa-solid fa-mobile"></i>
-                    <p>Web Front 기반 MBTI Test</p>
+                <li id="mbti">
+                    <h3>Web Front 기반 MBTI Test</h3>
                     <p><a href="https://drive.google.com/file/d/1W7LiP0GoEgzFqdz0XLnroUesZB3Qpng-/view?usp=drive_link"
                             target="_blank">MBTI Test</a></p>
                 </li>
-                <li>
-                    <i class="fa-solid fa-mobile"></i>
-                    <p>AI 기반 화재 감지 시스템 (YOLO)</p>
+                <li id="flame_guard">
+                    <h3>AI 기반 화재 감지 시스템 (YOLO)</h3>
                     <p><a href="https://drive.google.com/file/d/1uIKS13nZ-9Fo3bcG0o_MWbqJPplod4dp/view?usp=drive_link"
                             target="_blank">Flame Guard</a></p>
                 </li>
