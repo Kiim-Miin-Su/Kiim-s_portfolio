@@ -40,10 +40,6 @@ body {
     line-height: 1.6;
 }
 
-ul {
-    list-style: none;
-}
-
 a {
     text-decoration: none;
     color: var(--color-text);
@@ -153,7 +149,6 @@ section a {
     color: var(--color-text);
 }
 
-/* 로고 인터랙션 */
 .intro-hover-area {
     display: flex;
     align-items: center;
@@ -188,7 +183,6 @@ section a {
     color: var(--color-accent);
 }
 
-/* 로고 배경 이미지 적용용 클래스 */
 .education_logo {
     background-image: url(../images/korea_it.jpg);
 }
@@ -218,14 +212,69 @@ section a {
 }
 
 .works li {
+    position: relative;
     width: 45%;
     padding: 1rem;
     border-radius: 10px;
     background-color: var(--color-primary-variant);
+    color: var(--color-text);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.works li::after {
+    content: '';
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transform: scaleY(-1);
+    opacity: 0.15;
+    filter: blur(2px);
+    pointer-events: none;
+    z-index: 0;
+}
+
+#stock_predict {
+    background-image: url(../images/stock_predict.png);
+}
+
+#stock_predict::after {
+    background-image: url(../images/stock_predict.png);
+}
+
+#game {
+    background-image: url(../images/game.png);
+}
+
+#game::after {
+    background-image: url(../images/game.png);
+}
+
+#mbti {
+    background-image: url(../images/MBTI.png);
+}
+
+#mbti::after {
+    background-image: url(../images/MBTI.png);
+}
+
+#flame_guard {
+    background-image: url(../images/flame_guard.png);
+}
+
+#flame_guard::after {
+    background-image: url(../images/flame_guard.png);
 }
 
 .works a:hover {
     color: var(--color-accent);
+    font-weight: bold;
 }
 
 .contact {
@@ -257,28 +306,4 @@ footer ul {
 
 footer a {
     color: var(--color-accent);
-}
-
-#stock_predict {
-    background-image: url(../images/stock_predict.png);
-    background-size: cover;
-    background-position: center;
-}
-
-#game {
-    background-image: url(../images/game.png);
-    background-size: cover;
-    background-position: center;
-}
-
-#mbti {
-    background-image: url(../images/MBTI.png);
-    background-size: cover;
-    background-position: center;
-}
-
-#flame_guard {
-    background-image: url(../images/flame_guard.png);
-    background-size: cover;
-    background-position: center;
 }
