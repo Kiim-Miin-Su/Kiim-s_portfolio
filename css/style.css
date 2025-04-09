@@ -383,8 +383,10 @@ footer a {
 
     .works li span {
         font-size: small;
-        padding: 10px;
+        padding-bottom: 10px;
+        line-height: 1.2rem;
     }
+
 
     .works li:hover span {
         opacity: 1;
