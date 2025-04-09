@@ -381,6 +381,17 @@ footer a {
         padding: 0.5rem 0;
     }
 
+    .works li span {
+        font-size: small;
+        padding: 10px;
+    }
+
+    .works li:hover span {
+        opacity: 1;
+        transform: translateX(0);
+        transition: transform 0.4s ease, opacity 0.4s ease;
+    }
+
     .intro-hover-area {
         width: 100%;
         justify-content: flex-start;
