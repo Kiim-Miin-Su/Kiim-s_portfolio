@@ -241,8 +241,6 @@ section a {
     width: 45%;
     padding: 1rem;
     border-radius: 10px;
-    background-color: var(--color-primary-variant);
-    color: var(--color-text);
     background-size: cover;
     background-position: center;
     overflow: hidden;
@@ -254,10 +252,11 @@ section a {
 .works span {
     position: absolute;
     top: 55%;
-    line-height: 1.3rem;
+    left: 0%;
+    line-height: 1.1rem;
     font-weight: normal;
     color: var(--color-accent);
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: bold;
     text-align: center;
     opacity: 0;
@@ -311,11 +310,6 @@ section a {
     color: var(--color-accent);
     font-weight: bold;
 }
-
-.works li span {
-    line-height: 1.1rem;
-}
-
 
 .contact {
     background-color: var(--color-accent);
@@ -385,10 +379,17 @@ footer a {
         padding: 0.5rem 0;
     }
 
+    .works li {
+        position: relative;
+    }
+
     .works li span {
         font-size: small;
         padding-bottom: 10px;
         line-height: 1rem;
+        position: absolute;
+        top: 50%;
+        left: 5%;
     }
 
 
