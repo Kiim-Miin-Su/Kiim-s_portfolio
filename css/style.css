@@ -310,13 +310,43 @@ footer a {
 
 @media (max-width: 768px) {
 
-    .about_me,
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 1rem;
+    }
+
     .skills {
         width: 100%;
     }
 
-    .works li {
+    .about_me {
         width: 100%;
+    }
+
+    .home {
+        margin-top: 400px;
+    }
+
+    .menu_lists {
+        flex-direction: column;
+        width: 100%;
+        gap: 0.5rem;
+        margin-top: 1rem;
+    }
+
+    .menu_item {
+        padding: 0.5rem 0;
+    }
+
+    .intro-hover-area {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .intro-hover-area .logo-text {
+        font-size: 0.9rem;
     }
 }
 
