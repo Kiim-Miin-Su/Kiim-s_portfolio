@@ -312,6 +312,10 @@ section a {
     font-weight: bold;
 }
 
+.works li span {
+    line-height: 1.1rem;
+}
+
 
 .contact {
     background-color: var(--color-accent);
