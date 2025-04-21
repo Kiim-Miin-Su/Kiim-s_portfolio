@@ -375,6 +375,26 @@ footer a {
     transition: opacity 0.7s ease;
 }
 
+.op.view_span {
+    opacity: 1;
+    transition: opacity 0.7s ease;
+    text-align: center;
+    color: var(--color-accent);
+    padding: 20px;
+}
+
+.logo-text {
+    opacity: 0.4;
+    transition: opacity 0.4s ease;
+    color: var(--color-white);
+    font-size: 1rem;
+}
+
+.logo-text.view_span {
+    opacity: 1;
+    color: var(--color-accent);
+}
+
 .w_text.view_span {
     opacity: 1;
     transition: opacity 0.7s ease;
